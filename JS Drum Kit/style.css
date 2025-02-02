@@ -19,21 +19,31 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 140vh;
+  height: 150vh;
   color: bisque;
 }
 .key {
-  border: 2px solid black;
+  backdrop-filter: blur(3px);
+  border: 3px solid black;
+  box-shadow: 5px 5px 10px grey ;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
-  place-items: center;
+  text-align: center;
   width: 100px;
   height: 100px;
   margin: 10px;
   padding: 5px;
-}
+  transition: all 2.07s;
 
+}
+.playing{
+  transform: scale(1);
+  border-color: #ffc67c;
+  box-shadow: 0 0 10px  #ffc67c ;
+}
 .key kbd {
+display: block;
 font-weight: 300;
 font-size: 2em;
 color: hsl(32, 56%, 86%);
@@ -44,4 +54,6 @@ margin-top: 12px;
   color: hsl(33, 67%, 65%);
   text-transform: uppercase;
   margin-top: 6px;
+  letter-spacing: 1px;
+ 
 }
